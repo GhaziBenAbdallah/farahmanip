@@ -172,12 +172,12 @@ token_param = st.query_params.get("token")
 if token_param:
 
     if is_token_valid(token_param):
-        st.success("✅ Access granted")
-        # st.write("🎉 Welcome to protected content!")
+        # st.success("✅ Access granted")
+        # # st.write("🎉 Welcome to protected content!")
         st.components.v1.iframe(
             "https://docs.google.com/forms/d/e/1FAIpQLSc_WIQH1I6QC4uBqxPqjzobHT09P4bbzPa_MbB438FN8kY7NQ/viewform?embedded=true",
-            height=600,
-            width=760,
+            height=800,
+            width=900,
             scrolling=True
         )
     else:
@@ -210,4 +210,5 @@ if secret == ADMIN_SECRET:
 
 elif secret:
     st.error("Wrong secret code ❌")
+
 
