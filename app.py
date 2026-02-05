@@ -108,7 +108,7 @@ import threading
 
 TOKEN_DURATION = 20 * 60  # 20 minutes
 TOKEN_FILE = "token_store.json"
-ADMIN_SECRET = "VIP-2026"     # 🔐 change this
+ADMIN_SECRET = "A7f$K9mQ2ZxP@3sL8R!y"     # 🔐 change this
 BASE_URL = "https://farahmanip.streamlit.app/"
 
 _lock = threading.Lock()
@@ -210,3 +210,4 @@ if secret == ADMIN_SECRET:
 
 elif secret:
     st.error("Wrong secret code ❌")
+
